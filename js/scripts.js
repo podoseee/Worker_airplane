@@ -38,6 +38,23 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
+    // Slider value updates
+    const budgetRange = document.getElementById('budgetRange');
+    const budgetValue = document.getElementById('budgetValue');
+    if (budgetRange && budgetValue) {
+        budgetRange.addEventListener('input', (e) => {
+            budgetValue.textContent = Number(e.target.value).toLocaleString();
+        });
+    }
+
+    const timeRange = document.getElementById('timeRange');
+    const timeValue = document.getElementById('timeValue');
+    if (timeRange && timeValue) {
+        timeRange.addEventListener('input', (e) => {
+            timeValue.textContent = e.target.value;
+        });
+    }
+
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(

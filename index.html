@@ -27,11 +27,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hot_deals.html">초특가 추천</a></li>
+                        <li class="nav-item"><a class="nav-link" href="community_list.html">커뮤니티</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mypage_main.html">마이페이지</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">로그인</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,9 +38,19 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <div class="masthead-subheading">일정을 맞추지 마세요, 내 시간에 맞는 항공권만 모아보기</div>
+                <div class="masthead-heading text-uppercase">Worker Airplane</div>
+                <div class="search-box bg-light p-4 rounded shadow-sm text-dark mt-4" style="max-width: 600px; margin: 0 auto;">
+                    <div class="mb-3">
+                        <label for="budgetRange" class="form-label fw-bold">최대 예산: <span id="budgetValue">400,000</span> KRW</label>
+                        <input type="range" class="form-range" min="100000" max="2000000" step="50000" id="budgetRange" value="400000">
+                    </div>
+                    <div class="mb-3">
+                        <label for="timeRange" class="form-label fw-bold">평일 자유시간 개수: <span id="timeValue">2</span>일</label>
+                        <input type="range" class="form-range" min="0" max="5" step="1" id="timeRange" value="2">
+                    </div>
+                    <a class="btn btn-primary btn-xl text-uppercase w-100" href="search_results.html">항공권 매칭 시작</a>
+                </div>
             </div>
         </header>
         <!-- Services-->
@@ -57,24 +66,24 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">예산 맞춤</h4>
+                        <p class="text-muted">숨은 수하물 요금까지 계산된 최종가 매칭</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">시간 효율</h4>
+                        <p class="text-muted">당신의 퇴근 시각과 가용 시간으로 실시간 컷</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">이성적 탈출</h4>
+                        <p class="text-muted">월요일 출근 피로도까지 고려한 안전한 스케줄 제공</p>
                     </div>
                 </div>
             </div>
@@ -83,8 +92,8 @@
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">추천 항공권</h2>
+                    <h3 class="section-subheading text-muted">현재 가장 인기 있는 직장인 맞춤 일정</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -97,8 +106,8 @@
                                 <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                                <div class="portfolio-caption-heading">서울/인천 → 도쿄/나리타</div>
+                                <div class="portfolio-caption-subheading text-muted">가격: 320,000원 <span class="badge bg-primary">퇴근 후 출발 가능</span></div>
                             </div>
                         </div>
                     </div>
@@ -112,8 +121,8 @@
                                 <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                                <div class="portfolio-caption-heading">서울/인천 → 후쿠오카</div>
+                                <div class="portfolio-caption-subheading text-muted">가격: 290,000원 <span class="badge bg-warning">반차 승인 필요</span></div>
                             </div>
                         </div>
                     </div>
@@ -127,8 +136,8 @@
                                 <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
+                                <div class="portfolio-caption-heading">서울/인천 → 홍콩</div>
+                                <div class="portfolio-caption-subheading text-muted">가격: 210,000원 <span class="badge bg-danger">월요 피로곰</span></div>
                             </div>
                         </div>
                     </div>
