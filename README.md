@@ -1,52 +1,27 @@
-# Worker Airplane
+# Worker Airplane v02
 
-Worker Airplane is a static web prototype for worker-friendly flight search. It adapts the Start Bootstrap Agency template into a service that considers clock-out time, leave-day limits, budget, and next-day fatigue.
+Worker Airplane v02 is a static prototype for a lightweight flight search service. The site keeps the familiar shape of a flight search website, but its main difference is that it recommends flights by realistic travel feasibility: leave days by weekday, office commute time, airport gate buffer, immigration time, and Monday work readiness.
 
-## Page List
+## Prototype Scope
 
-The project contains 20 HTML pages. Every page is reachable from the top navigation or in-page buttons.
+- 28 HTML pages, split from the original one-page Template 6 style into feature-specific pages.
+- 20 virtual flight records in `js/data.js`.
+- 3 demo personas for presentation flow.
+- Card-based flight browsing and timeline-based simulators.
+- No real booking, payment, maps, or live airline data.
 
-| Page | File | Purpose |
+## Demo Personas
+
+| Persona | Use case | Good demo path |
 |---|---|---|
-| Home | index.html | Search flights by budget, work hours, and next-day fatigue. |
-| Search Results | search_results.html | Compare flight cards with worker-friendly filters. |
-| Flight Detail | flight_detail.html | Review schedule, cost, and work-life fit before booking. |
-| Schedule Simulator Setup | simulator_input.html | Enter office location, clock-out time, and leave options. |
-| Schedule Timeline | simulator_timeline.html | View a realistic travel timeline from office to return home. |
-| Share Schedule | simulator_share.html | Save and share a generated weekend travel plan. |
-| Booking Process | booking_process.html | Enter passenger details and review payment conditions. |
-| Booking Confirmed | booking_confirm.html | Show booking number and next recommended actions. |
-| Login | login.html | Sign in to manage alerts and saved flights. |
-| Sign Up | signup.html | Create an account with travel preferences. |
-| My Page | mypage_main.html | Summarize saved flights, alerts, and bookings. |
-| Wishlist | mypage_wishlist.html | Manage saved flights and price alerts. |
-| Purchase History | mypage_history.html | Review past bookings and receipts. |
-| Profile Settings | mypage_profile.html | Edit office location, default airport, and alerts. |
-| Hot Deals | hot_deals.html | Show time-safe discount flights for workers. |
-| Community Reviews | community_list.html | Browse short-trip reviews from workers. |
-| Review Detail | community_detail.html | Read one review with schedule tips. |
-| FAQ | support_faq.html | Answer common service and booking questions. |
-| Contact Support | support_contact.html | Submit booking, alert, or partnership questions. |
-| About Service | about_service.html | Explain the service concept and AI usage note. |
+| 금요일 저녁 퇴근형 | Office worker leaving Gangnam at 18:30 | Home -> Search Results -> Flight Detail -> Immigration Simulator -> Commute Simulator |
+| 교대근무 회복형 | Wants a slower Saturday start and low fatigue | Home -> Weekend Trips -> Relaxed Trips -> Timeline |
+| 짧아도 꽉 채우는 형 | Can use one leave day and wants maximum stay | Home -> Max Playtime -> Compare Flights -> Booking Confirm |
 
-## Tech Stack
+## Page Count
 
-- HTML5
-- CSS3 / Bootstrap 5 template base
-- Vanilla JavaScript
-- Font Awesome icons
-
-## AI Tool Usage
-
-- AI tool used: Yes
-- AI-assisted parts: HTML structure drafts, shared navigation, Bootstrap UI composition, and README organization
-- Directly edited parts: Service concept, page purpose, worker-specific conditions, sample flight data, and navigation flow
-- Final decisions: The 20 pages were separated into search, detail, simulator, booking, account, community, and support screens so they are not simple text swaps
+The project intentionally has more than 20 pages and fewer than 30 pages. Pages are separated by function so the prototype does not feel like a single scrolling landing page.
 
 ## Run
 
-Open index.html in a browser, or run a local static server:
-
-```bash
-python -m http.server 8000
-```
+Open `index.html` directly, or serve the folder with a static server.
